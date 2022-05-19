@@ -1,84 +1,121 @@
 header {
-    background: url("bg.jpg");
-    padding: 20px 0;
+  background: url("images/bg.jpg");
+  padding: 20px 0;
+}
+#banner {
+  width: 100%;
+}
+.logo {
+  height: 60px;
+  width: 50px;
 }
 .caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
 }
-nav{
-    position: absolute;
-    top: 110px;
-    right: 0;
+nav {
+  position: absolute;
+  top: 30px;
+  right: 0;
 }
 nav li {
-    display: inline;
-    margin: 0 0 0 15px;
+  display: inline;
+  margin: 0 0 0 15px;
 }
 
 nav a {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 20px;
-
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
 }
 nav a:hover {
- color: #c78c19;
- text-decoration: underline;
+  color: #c78c19;
+  text-decoration: underline;
 }
 
 .produtos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 .produtos li {
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
-    width: 30%;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 30%;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 15px;
 }
 
 .produtos li:hover {
-    border-color: #c78c19;
+  border-color: #c78c19;
 }
 .produtos li:active {
-    border-color: green;
+  border-color: green;
 }
 .produtos li:hover h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 .produtos h2 {
-    font-size: 30px;
-    font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .produto-preco {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 .produto-descricao {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 footer {
-    text-align: center;
-    background: url("bg.jpg");
-    padding: 40px 0;
+  text-align: center;
+  background: url("images/bg.jpg");
+  padding: 40px 0;
+}
+.titulo-principal {
+  padding-left: 20px;
 }
 
+.titulo-centralizado {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#missao {
+  font-size: 20px;
+}
+
+em strong {
+  color: #ff0000;
+}
+
+.itens {
+  font-style: italic;
+}
+
+.beneficios {
+  background: #ffffff;
+  padding: 20px;
+}
+
+.imagembeneficios {
+  width: 50%;
+}
 .copyright {
-    color: #000;
-    font-size: 15px;
-    margin: 20px 0;
+  color: #fff;
+  font-size: 15px;
+  margin: 20px 0;
 }

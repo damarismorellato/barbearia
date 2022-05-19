@@ -1,12 +1,43 @@
+
+header {
+    background: rgb(54, 52, 52);
+	height: 60px;
+}
 #banner {
 	width:100%;
 }
-
-.principal{
-	background: #CCCCCC;
-	padding: 30px;
+.logo {
+	height: 50px;
+	width: 50px;
+	padding: 10px;
+}
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
+nav a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+nav a:hover {
+ color: #c78c19;
+ text-decoration: underline;
+}
 .titulo-principal {
 	padding-left: 20px;
 }
@@ -36,12 +67,7 @@ em strong {
 	padding: 20px;
 }
 
-ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
-}
+
 
 .imagembeneficios {
 	width: 50%;
