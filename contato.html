@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Meus trabalhos</title>
+    <title>Contato - Barbearia</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -21,18 +21,57 @@
     </header>
     <main>
       <form>
-        <label>Nome e Sobrenome</label>
-        <input type="texto" id="nome">
-        <label>Email</label>
-        <input type="texto" id="email">
-        <label>Telefone</label>
-        <input type="texto" id="telefone">
-        <input type="submit" value="Enviar formulário">
+        <label for="nome">Nome e Sobrenome</label>
+        <input type="texto" class="input-padrao" id="nome" />
+
+        <label for=" email">Email</label>
+        <input type="texto" class="input-padrao" id="email" />
+
+        <label for="telefone">Telefone</label>
+        <input type="texto" class="input-padrao" id="telefone" />
+
+        <label>Mensagem</label>
+        <textarea cols="70" rows="10" class="input-padrao"></textarea>
+        <div>
+          <p>Como prefere o nosso contato?</p>
+
+          <label for="radio-email">
+            <input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio-email"
+            />Email</label
+          >
+
+          <label for="radio-telefone"
+            ><input
+              type="radio"
+              name="contato"
+              value="telefone"
+              id="radio-telefone"
+            />Telefone</label
+          >
+
+          <label for="whatsapp">
+            <input
+              type="radio"
+              name="contato"
+              value="whatsapp"
+              id="radio-whatsapp"
+            />Whatsapp</label
+          >
+        </div>
+        <label>
+          <input type="checkbox" class="checkbox"/> Gostaria de receber nossas novidades por
+          email?</label
+        >
+        <input type="submit" value="Enviar formulário" />
       </form>
     </main>
     <footer>
-      <img src="images/logo-branco.png">
-      <p class="copyright"> &copy; Copyright Barbearia - 2022 </p>
+      <img src="images/logo-branco.png" />
+      <p class="copyright">&copy; Copyright Barbearia - 2022</p>
     </footer>
   </body>
 </html>
