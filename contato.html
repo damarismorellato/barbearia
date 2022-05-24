@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="caixa">
-        <h1><img src="images/logo-branco.png" /></h1>
+        <h1><img src="images/logo-branco.png" alt="Logo da Barbearia" /></h1>
         <nav>
           <ul>
             <li><a href="index.html"> Home</a></li>
@@ -22,18 +22,18 @@
     <main>
       <form>
         <label for="nome">Nome e Sobrenome</label>
-        <input type="texto" class="input-padrao" id="nome" />
+        <input type="texto" class="input-padrao" id="nome" required/>
 
         <label for=" email">Email</label>
-        <input type="texto" class="input-padrao" id="email" />
+        <input type="email" class="input-padrao" id="email" required placeholder="seuemail@dominio.com"/>
 
         <label for="telefone">Telefone</label>
-        <input type="texto" class="input-padrao" id="telefone" />
+        <input type="tel" class="input-padrao" id="telefone" required placeholder="(xx) xxxxx-xxxx"/>
 
         <label>Mensagem</label>
         <textarea cols="70" rows="10" class="input-padrao"></textarea>
-        <div>
-          <p>Como prefere o nosso contato?</p>
+        <fieldset>
+          <legend>Como prefere o nosso contato?</legend>
 
           <label for="radio-email">
             <input
@@ -59,18 +59,48 @@
               name="contato"
               value="whatsapp"
               id="radio-whatsapp"
+              checked
             />Whatsapp</label
           >
-        </div>
+        </fieldset>
+        <fieldset>
+          <legend>Qual horário gostaria de ser atendido?</legend>
+          <select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </fieldset>
         <label>
-          <input type="checkbox" class="checkbox"/> Gostaria de receber nossas novidades por
+          <input type="checkbox" class="checkbox" checked/> Gostaria de receber nossas novidades por
           email?</label
         >
-        <input type="submit" value="Enviar formulário" />
+        <input type="submit" value="Enviar formulário" class="enviar"/>
       </form>
+      <table>
+        <thead>
+        <tr>
+          <th>Dia</th>
+          <th>Horário</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Seg à Sex</td>
+          <td>8hrs às 20hrs</td>
+        </tr>
+        <tr>
+          <td>Sab e Dom</td>
+          <td>8hrs às 18hrs</td>
+        </tr>
+        <tr>
+          <td colspan="5">*Consultar os horário aos feriados</td> 
+        </tr>
+        </tbody>
+      </table>
     </main>
     <footer>
-      <img src="images/logo-branco.png" />
+      <img src="images/logo-branco.png"  alt="Logo da Barbearia"/>
       <p class="copyright">&copy; Copyright Barbearia - 2022</p>
     </footer>
   </body>

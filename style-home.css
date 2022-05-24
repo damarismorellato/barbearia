@@ -1,55 +1,18 @@
-
-.header-home {
-    background: rgb(54, 52, 52);
-	height: 60px;
-}
 #banner {
 	width:100%;
 }
-.principal {
-    padding: 30px;
-    background: #d6c7a8;
-}
-.logo {
-    height: 60px;
-    width: 50px;
-  }
-.caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-}
-nav{
-    position: absolute;
-    top: 30px;
-    right: 0;
-}
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
+
+.principal{
+	background: #CCCCCC;
+	padding: 30px;
 }
 
-nav a {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 15px;
-
-}
-nav a:hover {
- color: #c78c19;
- text-decoration: underline;
-}
 .titulo-principal {
 	padding-left: 20px;
 }
 
 .titulo-centralizado {
-	text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 10px;
+	text-align: center
 }
 
 p {
@@ -71,6 +34,13 @@ em strong {
 .beneficios {
 	background: #FFFFFF;
 	padding: 20px;
+}
+
+ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
 }
 
 .imagembeneficios {
