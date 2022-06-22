@@ -101,6 +101,9 @@ footer {
 
 form {
   margin: 40px 0;
+  width: 940px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 form label,
@@ -243,6 +246,13 @@ th {
 
 .imagem-beneficios {
   width: 60%;
+  opacity: 1;
+  box-shadow: 10px 10px 30px #000;
+}
+
+.imagem-beneficios:hover {
+  opacity: 0.3;
+  transition: 400ms;
 }
 
 .itens {
@@ -257,11 +267,47 @@ th {
   content: '★ ';
 }
 
-/* main > p {
+/*
+Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+main > p {
   background: red;
 }
 
-pegando apenas o primeiro paragrafo após a tag img
+Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
 img + p {
   background: blue;
-} */
+} 
+Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+
+img ~ p {
+  background: blue;
+}
+Seletor not, para acessar os elementos, exceto algum. 
+Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+
+.principal p:not(#missao) {
+  background: orange;
+}
+
+Seletores avançados tem a mesma força
+
+
+*/
+
+@media screen and (max-width: 480px) {
+  .caixa, .principal-conteudo, .conteudo-beneficios, .mapa-conteudo, .video, .form {
+      width: auto;
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+  nav {
+      position: static;
+  }
+
+  .lista-beneficios, .imagem-beneficios {
+      width: 100%;
+  }
+}
